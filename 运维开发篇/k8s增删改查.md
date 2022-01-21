@@ -95,12 +95,20 @@ func main() {
 ### 1.3获取clientset对象
 
 ```go
+package main
+import (
+	"context"
+	"flag"
+	"fmt"
+	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	"k8s.io/client-go/kubernetes"
+	"k8s.io/client-go/rest"
+)
 // 实例化clientset对象
 	config := rest.Config{
 		Host: "http://121.5.106.67:9090",  //代理地址
 		BearerToken: "eyJhbGciOiJSUzI1NiIsImtpZCI6IkNTaDRNUk1aSEs4YnBEVm5fZGw4RFZoN3VZQ3pkdV9mRHVmOGctWEVhVGsifQ.eyJpc3MiOiJrdWJlcm5ldGVzL3NlcnZpY2VhY2NvdW50Iiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9uYW1lc3BhY2UiOiJrdWJlLXN5c3RlbSIsImt1YmVybmV0ZXMuaW8vc2VydmljZWFjY291bnQvc2VjcmV0Lm5hbWUiOiJrOHMtYXV0aG9yaXplLXRva2VuLWdqNWJtIiwia3ViZXJuZXRlcy5pby9zZXJ2aWNlYWNjb3VudC9zZXJ2aWNlLWFjY291bnQubmFtZSI6Ims4cy1hdXRob3JpemUiLCJrdWJlcm5ldGVzLmlvL3NlcnZpY2VhY2NvdW50L3NlcnZpY2UtYWNjb3VudC51aWQiOiIzYTcwNzI4Ni1mZDMyLTQ4ZDEtYmU2Yi03YjAxOGFmNWUxMmIiLCJzdWIiOiJzeXN0ZW06c2VydmljZWFjY291bnQ6a3ViZS1zeXN0ZW06azhzLWF1dGhvcml6ZSJ9.VAnQsm2oLxNIab0SpmAkKO3FgaSGjSWs24LZ_gh08nXcsps40_DDTJzUG2jFjOCAluOOUz2EzbuVbud7EN9wOSbkA7-DaBDe6v009HrFWZ0mWt3MUG2uEzFJCRP7v5ySYMtNGb8ORX-68UvVvOCGHrN0dHH2IAwtke6U9npg_sWU_wHX835C-NF05qWGk2n3dlVBFsCq6U6ntVFhEJnq48vAZA3RfMPHkEha8xKroSERSVQkbi28EVKaepimF9-LV5RBY4bzbjz8fCcC9ikvW2goggcQx4getIC9DR0NmB3qybfPdZ7ltWCOiE3lFWwELk0Rd4geb9CpWdbLojn_ug",
 	}
-	operate := flag.String("operate", "create", "operate type : create or clean")
 	clientset, err := kubernetes.NewForConfig(&config)
 	if err != nil {
 		panic(err.Error())
@@ -114,7 +122,7 @@ func main() {
 ### 2.1获取namespace中的pod信息
 
 ```go
-pods, err := clientset.CoreV1().Pods("default").List(metav1.ListOptions{})
+pods, err := clientset.CoreV1().Pods("default").List(context.TODO(),metav1.ListOptions{})
 if err != nil {
     panic(err)
 }
