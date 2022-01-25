@@ -11,3 +11,13 @@
 6.ansible,salt
 
 7.学习能力
+
+
+
+
+
+周三 ansible + redis + mysql
+
+周四 prometheus+grafana+自定义监控项目
+
+ 周五  linux优化 etcd优化 + falcon 

@@ -1,5 +1,9 @@
 https://cloud.tencent.com/developer/article/1781705
 
+https://mp.weixin.qq.com/s/SyU8ucIkyRcEau-ZJo6Gfw   //nginx监控数据
+
+> https://www.cnblogs.com/JetpropelledSnake/p/10057545.html  集群版本可以参考
+
 # elk+kafka安装
 
 ## 一.elastic安装
