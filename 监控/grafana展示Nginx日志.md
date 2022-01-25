@@ -1,5 +1,7 @@
 ## grafana展示Nginx日志
 
+> https://cloud.tencent.com/developer/article/1802967?from=article.detail.1781705
+
 ```bash
 #部署服务 Elasticsearch,Logstash,Kibana,Filebeat,grafana
 ```
