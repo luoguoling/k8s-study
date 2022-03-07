@@ -14,6 +14,8 @@ https://www.cnblogs.com/woki/category/2017772.html
 
 7.mysql主从
 
+8.spring cloud微服务部署 https://cloud.tencent.com/developer/article/1602058
+
 
 
 
