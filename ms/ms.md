@@ -14,7 +14,9 @@ https://www.cnblogs.com/woki/category/2017772.html
 
 7.mysql主从
 
-8.spring cloud微服务部署 https://cloud.tencent.com/developer/article/1602058
+8.spring cloud微服务部署  https://blog.csdn.net/weixin_38320674/article/details/106894186    https://cloud.tencent.com/developer/article/1602058
+
+9.熟悉腾讯云k8s服务
 
 
 
