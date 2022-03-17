@@ -17,3 +17,5 @@ https://www.bilibili.com/video/BV1UA41187Du?p=2&spm_id_from=pageDriver
 > https://github.com/SpringCloud/spring-cloud-zuul-nacos   代码demo
 
 > https://blog.csdn.net/qq_29519041/article/details/103654564  zuul+eureka
+>
+> https://www.bilibili.com/video/BV1s5411j7zq?p=28 视频教程
