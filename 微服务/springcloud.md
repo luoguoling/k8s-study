@@ -15,3 +15,5 @@ https://www.bilibili.com/video/BV1UA41187Du?p=2&spm_id_from=pageDriver
 > https://blog.csdn.net/rickiyeat/article/details/84595350  nacos+zuul  实现动态路由
 >
 > https://github.com/SpringCloud/spring-cloud-zuul-nacos   代码demo
+
+> https://blog.csdn.net/qq_29519041/article/details/103654564  zuul+eureka
