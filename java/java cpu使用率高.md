@@ -18,3 +18,15 @@ grep "6f51" /tmp/24379.stack
 
 
 
+java常用命令
+
+```bash
+jps -v #查看进程详细启动参数
+jinfo pid -flags pid  #只输出参数
+jstat -gcutil pid 1000 100  #1000毫秒统计一次gc情况，统计100次
+
+
+
+
+```
+
